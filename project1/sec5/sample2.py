@@ -10,3 +10,20 @@ b.split(sep=' ')
 c.split(sep=' ')
 
 print(a[0]+b[0]+c[0])
+
+class WordAbbr:
+    word = ""
+
+    def inputWord(self):
+        in1 = input("첫번째 단어 :")
+        in2 = input("두번째 단어 :")
+        in3 = input("세번째 단어 :")
+        self.word = in1[0] + in2[0] + in3[0]
+        return self.word
+
+    def printWord(self):
+        print(self.word)
+
+w = WordAbbr()
+w.inputWord()
+w.printWord()
